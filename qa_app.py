@@ -113,7 +113,7 @@ def main():
         padding: 0px 0px;
         text-align: center;
     ">
-        <p>Made by <a href='https://twitter.com/mehmet_ba7'>Mehmet Balioglu</a></p>
+
     </div>
     """
 
