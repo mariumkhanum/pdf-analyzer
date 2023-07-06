@@ -169,10 +169,7 @@ def main():
         unsafe_allow_html=True,
     )
     st.sidebar.image("img/logo1.png")
-
-
    
-
     st.write(
     f"""
     <div style="display: flex; align-items: center; margin-left: 0;">
