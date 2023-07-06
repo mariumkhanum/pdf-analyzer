@@ -177,23 +177,15 @@ def main():
     f"""
     <div style="display: flex; align-items: center; margin-left: 0;">
         <h1 style="display: inline-block;">PDF Analyzer</h1>
-        <sup style="margin-left:5px;font-size:small; color: green;">beta</sup>
     </div>
     """,
     unsafe_allow_html=True,
         )
     
-    
-
-
-    
-    
     st.sidebar.title("Menu")
     
     embedding_option = st.sidebar.radio(
         "Choose Embeddings", ["OpenAI Embeddings", "HuggingFace Embeddings(slower)"])
-
-    
     retriever_type = st.sidebar.selectbox(
         "Choose Retriever", ["SIMILARITY SEARCH", "SUPPORT VECTOR MACHINES"])
 
