@@ -16,7 +16,7 @@ from langchain.callbacks.base import CallbackManager
 from langchain.embeddings import HuggingFaceEmbeddings
 
 
-# st.set_page_config(page_title="PDF Analyzer",page_icon=':shark:')
+st.set_page_config(page_title="PDF Analyzer",page_icon=':shark:')
 
 @st.cache_data
 def load_docs(files):
@@ -173,7 +173,6 @@ def main():
     st.write(
     f"""
     <div style="display: flex; align-items: center; margin-left: 0;">
-        <h1 style="display: inline-block;">PDF Analyzer</h1>
     </div>
     """,
     unsafe_allow_html=True,
