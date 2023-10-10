@@ -16,7 +16,7 @@ from langchain.callbacks.base import CallbackManager
 from langchain.embeddings import HuggingFaceEmbeddings
 
 
-st.set_page_config(page_title="my gpt",page_icon=':shark:')
+st.set_page_config(page_title="Islamic verses GPT",page_icon=':shark:')
 
 @st.cache_data
 def load_docs(files):
@@ -82,7 +82,7 @@ def generate_eval(text, N, chunk):
     # IN: text, N questions, chunk size to draw question from in the doc
     # OUT: eval set as JSON list
 
-    st.info("`Generating sample questions ...`")
+    st.info("`Generating questions about islamic verses ...`")
     n = len(text)
     starting_indices = [random.randint(0, n-chunk) for _ in range(N)]
     sub_sequences = [text[i:i+chunk] for i in starting_indices]
